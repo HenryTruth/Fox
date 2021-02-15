@@ -1,0 +1,8 @@
+.muscles {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 2fr;
+  background-color: red;
+}
+.muscles .muscles_passion {
+  background-color: ;
+}

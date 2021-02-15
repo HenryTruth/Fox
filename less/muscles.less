@@ -1,0 +1,128 @@
+.muscles{
+    background-color: #464646;
+    display:grid;
+    grid-template-rows: 1fr;
+    @media @mobile-xl{
+        grid-template-rows: .8fr;
+    }
+    @media @tablet-md{
+        grid-template-rows:repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+        padding-bottom: 4rem;
+        grid-gap: 3rem;
+    }
+    @media @desktop-md{
+        padding: 2rem 10rem;
+        margin: 0 auto;
+        height:130vh;
+    }
+
+    .muscles_passion{
+        background-color: @main-color;
+        margin: 3rem;
+        margin-right: 4rem;
+        
+        @media @tablet-md{
+            justify-self: center;
+            margin:0;
+            margin-right: 0;
+            
+        }
+       
+        h2{
+            font-size: @fontsize * 2;
+            margin: 1.5rem;
+            color:white;
+        }
+        p{
+            font-size: @fontsize *1.6;
+            margin: 1.5rem;
+            line-height: 2.6rem;
+            font-weight: bold;
+            @media @tablet-md{
+                margin:1rem;
+                font-size:@fontsize * 1.4;
+
+            }
+        }
+
+    }
+
+    .muscles_g{
+        margin: 3rem;
+        height: 90%;
+        width: 80%;
+        @media @mobile-lg{
+            width:85%;
+        }
+        @media @mobile-xl{
+            height:85%;
+            margin-right: 1rem;
+            
+        }
+        @media @tablet-xm{
+            width: 88%;
+            margin-right: 1rem;
+            
+        }
+        @media @tablet-sm{
+            width: 90%;
+        }
+        @media @tablet-md{
+            justify-self: center;
+            height:100%;
+            width:100%;
+            margin: 0;
+        }
+        
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    #muscle_1{
+        @media @tablet-md{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            
+        }
+    }
+    #muscle_2{
+        @media @tablet-md{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+    #muscle_4{
+        @media @tablet-md{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+    }
+    #passion1{
+        
+    }
+    #passion2{
+        @media @tablet-md{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+    #passion3{
+        @media @tablet-md{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+    }
+}

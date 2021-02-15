@@ -1,0 +1,925 @@
+.about-us {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-image: url(../images/about-us-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (min-width: 768px) {
+  .about-us {
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+  }
+}
+.about-us div {
+  display: grid;
+}
+@media only screen and (min-width: 768px) {
+  .about-us div {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+.about-us div h1 {
+  justify-self: center;
+  font-size: 3.3rem;
+  margin: 1rem;
+  color: #FF8013;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  .about-us div h1 {
+    justify-self: start;
+    margin-left: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about-us div h1 {
+    margin-top: 9rem;
+  }
+}
+.about-us div hr {
+  border-top: 5px solid white;
+  width: 8rem;
+  margin: 1rem;
+  height: 0;
+  padding: 0;
+  justify-self: center;
+}
+@media only screen and (min-width: 768px) {
+  .about-us div hr {
+    justify-self: start;
+    margin-left: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about-us div hr {
+    margin-bottom: -5rem;
+  }
+}
+.about-us div h6 {
+  color: white;
+  line-height: 2.5rem;
+  font-size: 1.43rem;
+  margin: 3rem;
+  margin-bottom: -1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .about-us div h6 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+.about-us div span {
+  padding: 1rem 1.5rem;
+  border: 2px solid #FF8013;
+  display: inline-block;
+  text-align: center;
+  margin: 3rem;
+  width: 15rem;
+  height: 5rem;
+}
+.about-us div span a {
+  color: white;
+  font-size: 1.98rem;
+}
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #101011;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.8fr 1fr;
+  }
+}
+footer .footer-title .logo {
+  margin-top: 2rem;
+}
+footer .footer-title .logo .logo-img {
+  margin: 2rem;
+  width: 100%;
+  height: 100%;
+}
+footer .footer-title .logo .logo-content p {
+  color: white;
+  font-size: 1.54rem;
+  margin: 2rem;
+  line-height: 2.5rem;
+}
+footer .footer-title .logo .logo-footer p {
+  color: white;
+  font-size: 1.54rem;
+  margin: 2rem;
+  line-height: 2.5rem;
+}
+footer .footer-title .logo .logo-footer p span {
+  color: #FF8013;
+}
+footer form {
+  background-color: white;
+  margin: 3rem;
+  margin-top: 0;
+  width: 80%;
+  height: 100%;
+}
+footer form h1 {
+  text-align: center;
+  margin: 1.5rem;
+  color: #FF8013;
+}
+footer form .form-input {
+  background-color: white;
+  margin: 2rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+footer form .form-input .fieldset_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  border: none;
+  margin: 1rem 0;
+}
+footer form .form-input .fieldset_1 #email {
+  display: inline-block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: none;
+  border-bottom: 0.5px solid grey;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1.76rem;
+}
+footer form .form-input .fieldset_1 #phone {
+  display: inline-block;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: none;
+  border-bottom: 0.5px solid grey;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1.76rem;
+}
+footer form .form-input .fieldset_2 {
+  margin: 1rem 0;
+  border: none;
+}
+footer form .form-input .fieldset_2 input {
+  border: none;
+  border-bottom: 0.5px solid grey;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1.76rem;
+}
+footer form .form-input .fieldset_3 {
+  margin: 1rem 0;
+  border: none;
+}
+footer form .form-input .fieldset_3 input {
+  border: none;
+  border-bottom: 0.5px solid grey;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1.76rem;
+}
+footer form .form-input .fieldset_4 {
+  justify-self: center;
+  margin: 1rem 0;
+  border: none;
+  width: 50%;
+}
+footer form .form-input .fieldset_4 #send {
+  background-color: #343A40;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0.8rem;
+  font-size: 1.76rem;
+}
+footer .footer-foot div {
+  margin: 2rem;
+}
+footer .footer-foot div h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin: 2rem 0;
+}
+footer .footer-foot div p {
+  color: white;
+  font-size: 1.65rem;
+  margin: 2rem 0;
+}
+footer .footer-foot div span img {
+  padding: 1rem;
+  border-radius: 5rem;
+  background-color: white;
+  margin-right: 1rem;
+}
+.members {
+  display: grid;
+  grid-template-rows: 1fr 0.7fr;
+  background-color: #BFBFC1;
+}
+@media only screen and (min-width: 768px) {
+  .members {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .members {
+    height: 65vh;
+  }
+}
+.members .members-info {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+@media only screen and (min-width: 768px) {
+  .members .members-info {
+    justify-self: center;
+    margin: 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .members .members-info {
+    padding-left: 2rem;
+  }
+}
+.members .members-info h1 {
+  font-size: 2.42rem;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .members .members-info h1 {
+    font-size: 3.3rem;
+  }
+}
+.members .members-info h2 {
+  font-size: 3.85rem;
+  margin: 1rem;
+  color: #FF8013;
+}
+@media only screen and (min-width: 1024px) {
+  .members .members-info h2 {
+    font-size: 4.18rem;
+  }
+}
+.members .members-info hr {
+  border: 3px solid #FF8013;
+  width: 8rem;
+  margin: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .members .members-info hr {
+    width: 10rem;
+  }
+}
+.members .members-info h3 {
+  font-size: 1.98rem;
+  margin: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .members .members-info h3 {
+    font-size: 2.75rem;
+  }
+}
+.members .members-info p {
+  font-size: 1.54rem;
+  margin: 1rem;
+  margin-right: 5.2rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1024px) {
+  .members .members-info p {
+    font-size: 1.76rem;
+  }
+}
+.members .memebers-pic {
+  justify-self: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 25rem;
+  width: 30rem;
+  margin: 2rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .members .memebers-pic {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: -5rem;
+  }
+}
+.members .memebers-pic img {
+  width: 100%;
+  height: 100%;
+}
+header {
+  display: grid;
+  grid-template-rows: 0.2fr 0.8fr;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 80vh;
+  }
+}
+header .header-content {
+  align-self: center;
+  justify-self: center;
+}
+@media only screen and (min-width: 1024px) {
+  header .header-content {
+    margin-bottom: 10rem;
+  }
+}
+@media only screen and (min-width: 425px) {
+  header .header-content {
+    justify-self: start;
+    margin-left: 3rem;
+  }
+}
+header .header-content #header-right {
+  margin-left: 0.6rem;
+}
+header .header-content h1 {
+  color: white;
+  font-size: 3.74rem;
+  margin-left: 1.6rem;
+}
+@media only screen and (min-width: 1024px) {
+  header .header-content h1 {
+    font-size: 4.95rem;
+  }
+}
+header .header-content h1 span {
+  display: block;
+  color: #FF8013;
+}
+header .header-content #header-left {
+  float: right;
+}
+header .header-content div {
+  margin-top: 8rem;
+  margin-left: 1rem;
+}
+header .header-content div .header-btn1 {
+  padding: 1.5rem 1.5rem;
+  border: 0.5px solid #FF8013;
+  margin-right: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  header .header-content div .header-btn1 {
+    padding: 0 1.8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.7rem;
+  }
+}
+header .header-content div .header-btn1 a {
+  font-size: 1.98rem;
+  color: white;
+}
+@media only screen and (min-width: 1024px) {
+  header .header-content div .header-btn1 a {
+    font-size: 2.42rem;
+    padding: 0;
+  }
+}
+header .header-content div .header-btn2 {
+  padding: 1.5rem 2rem;
+  border: 0.5px solid #FF8013;
+}
+@media only screen and (min-width: 1024px) {
+  header .header-content div .header-btn2 {
+    padding: 0 3.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.7rem;
+    margin-left: 3rem;
+  }
+}
+header .header-content div .header-btn2 a {
+  font-size: 1.98rem;
+  color: white;
+}
+@media only screen and (min-width: 1024px) {
+  header .header-content div .header-btn2 a {
+    font-size: 2.42rem;
+  }
+}
+.muscles {
+  background-color: #464646;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+@media only screen and (min-width: 530px) {
+  .muscles {
+    grid-template-rows: 0.8fr;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .muscles {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    padding-bottom: 4rem;
+    grid-gap: 3rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .muscles {
+    padding: 2rem 10rem;
+    margin: 0 auto;
+    height: 130vh;
+  }
+}
+.muscles .muscles_passion {
+  background-color: #FF8013;
+  margin: 3rem;
+  margin-right: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .muscles .muscles_passion {
+    justify-self: center;
+    margin: 0;
+    margin-right: 0;
+  }
+}
+.muscles .muscles_passion h2 {
+  font-size: 2.2rem;
+  margin: 1.5rem;
+  color: white;
+}
+.muscles .muscles_passion p {
+  font-size: 1.76rem;
+  margin: 1.5rem;
+  line-height: 2.6rem;
+  font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+  .muscles .muscles_passion p {
+    margin: 1rem;
+    font-size: 1.54rem;
+  }
+}
+.muscles .muscles_g {
+  margin: 3rem;
+  height: 90%;
+  width: 80%;
+}
+@media only screen and (min-width: 425px) {
+  .muscles .muscles_g {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .muscles .muscles_g {
+    height: 85%;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 585px) {
+  .muscles .muscles_g {
+    width: 88%;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 625px) {
+  .muscles .muscles_g {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .muscles .muscles_g {
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+.muscles .muscles_g img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .muscles #muscle_1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .muscles #muscle_2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .muscles #muscle_4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .muscles #passion2 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .muscles #passion3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+.trainers {
+  background-color: #464646;
+  display: grid;
+}
+@media only screen and (min-width: 1024px) {
+  .trainers {
+    padding: 2rem 7rem;
+    margin: 0 auto;
+  }
+}
+.trainers .trainers-container {
+  border-top: 10px solid #FF8013;
+  border-bottom: 10px solid #FF8013;
+  background-color: black;
+  display: grid;
+  grid-template-rows: repeat(auto, auto);
+  margin: 3rem;
+}
+.trainers .trainers-container .trainer-head {
+  margin: 1rem 0;
+  color: white;
+  text-align: center;
+  height: 90vh;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-head {
+    height: 10vh;
+  }
+}
+.trainers .trainers-container .trainer-head h1 {
+  position: relative;
+  color: white;
+  font-size: 2.75rem;
+  margin: 2rem;
+}
+.trainers .trainers-container .trainer-head h1::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: url(../images/right-quote-white.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+  right: 0;
+  left: 1%;
+  bottom: 0;
+}
+.trainers .trainers-container .trainer-head h1::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: url(../images/left-quote-white.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  right: 1%;
+  bottom: -2rem;
+}
+.trainers .trainers-container .trainer-body {
+  background-image: url(../images/gym2.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-body {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.trainers .trainers-container .trainer-body .trainer-head-image {
+  justify-self: center;
+  text-align: center;
+  height: 20rem;
+  width: 18rem;
+  height: 30vh;
+  margin-top: -37rem;
+  z-index: 100;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-body .trainer-head-image {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 2.5rem;
+  }
+}
+.trainers .trainers-container .trainer-body .trainer-head-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+}
+.trainers .trainers-container .trainer-body .trainer-body-quote {
+  background-color: #CCCCCC;
+  height: 70vh;
+  text-align: center;
+  margin: 0rem 5rem;
+  margin-top: -15rem;
+  border-radius: 1.5rem;
+  z-index: 100;
+}
+@media only screen and (min-width: 425px) {
+  .trainers .trainers-container .trainer-body .trainer-body-quote {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .trainers .trainers-container .trainer-body .trainer-body-quote {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-body .trainer-body-quote {
+    align-self: start;
+    justify-self: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 0.5rem;
+    height: 38vh;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .trainers .trainers-container .trainer-body .trainer-body-quote {
+    height: 45vh;
+  }
+}
+.trainers .trainers-container .trainer-body .trainer-body-quote h1 {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: 1.98rem;
+}
+.trainers .trainers-container .trainer-body .trainer-body-quote p {
+  font-size: 1.54rem;
+  line-height: 2.5rem;
+  margin: 0 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-body .trainer-body-quote p {
+    margin: 0 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .trainers .trainers-container .trainer-body .trainer-body-quote p {
+    font-size: 1.98rem;
+    line-height: 2.8rem;
+    padding: 1rem;
+  }
+}
+.trainers .trainers-container .trainer-body-image {
+  justify-self: center;
+  text-align: center;
+  height: 20rem;
+  width: 18rem;
+  height: 30vh;
+  margin-top: 3rem;
+  z-index: 100;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-body-image {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+.trainers .trainers-container .trainer-body-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+}
+.trainers .trainers-container .trainer-foot-quote {
+  background-color: #CCCCCC;
+  height: 70vh;
+  text-align: center;
+  margin: 3rem 5rem;
+  margin-bottom: -18rem;
+  border-radius: 1.5rem;
+  z-index: 100;
+}
+@media only screen and (min-width: 425px) {
+  .trainers .trainers-container .trainer-foot-quote {
+    height: 40vh;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .trainers .trainers-container .trainer-foot-quote {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 585px) {
+  .trainers .trainers-container .trainer-foot-quote {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 625px) {
+  .trainers .trainers-container .trainer-foot-quote {
+    height: 45vh;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-foot-quote {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: start;
+    justify-self: center;
+    height: 30vh;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    height: 38vh;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .trainers .trainers-container .trainer-foot-quote {
+    height: 45vh;
+  }
+}
+.trainers .trainers-container .trainer-foot-quote h1 {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: 1.98rem;
+}
+.trainers .trainers-container .trainer-foot-quote p {
+  font-size: 1.54rem;
+  line-height: 2.5rem;
+  margin: 0 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-foot-quote p {
+    margin: 0 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .trainers .trainers-container .trainer-foot-quote p {
+    font-size: 1.98rem;
+    line-height: 2.8rem;
+    padding: 1rem;
+  }
+}
+.trainers .trainers-container .trainer-foot {
+  color: white;
+  height: 80vh;
+}
+@media only screen and (min-width: 768px) {
+  .trainers .trainers-container .trainer-foot {
+    height: 10vh;
+  }
+}
+.lift {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr;
+  background-color: #464646;
+}
+@media only screen and (min-width: 768px) {
+  .lift {
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .lift {
+    padding: 0rem 8rem;
+    margin: 0 auto;
+  }
+}
+.lift .first-row {
+  justify-self: center;
+  margin: 2rem;
+  width: 80%;
+}
+@media only screen and (min-width: 425px) {
+  .lift .first-row {
+    width: 88%;
+  }
+}
+@media only screen and (min-width: 530px) {
+  .lift .first-row {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 625px) {
+  .lift .first-row {
+    width: 92%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .lift .first-row {
+    width: 100%;
+    margin: 0;
+    padding-left: 3rem;
+    margin-top: -10rem;
+  }
+}
+.lift .first-row img {
+  width: 100%;
+  height: 100%;
+}
+.lift .second-row {
+  margin: 0 3rem;
+}
+@media only screen and (min-width: 768px) {
+  .lift .second-row {
+    width: 100%;
+    margin: 0;
+    padding-right: 2.5rem;
+  }
+}
+.lift .second-row img {
+  width: 100%;
+  height: 100%;
+}
+.lift .second-row p {
+  font-size: 1.43rem;
+  color: white;
+  margin-top: -9.5rem;
+  z-index: 500;
+  text-align: center;
+}
+@media only screen and (min-width: 530px) {
+  .lift .second-row p {
+    font-size: 1.76rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .lift .second-row p {
+    margin-top: -14.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .lift .second-row p {
+    font-size: 1.98rem;
+    margin-top: -17.7rem;
+  }
+}
+/* media queries */
+/** desktop Viewport **/
+/** Mobile Viewport **/
+/* fontfamily */
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #464646;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(auto, auto);
+  grid-template-columns: 1fr;
+}
